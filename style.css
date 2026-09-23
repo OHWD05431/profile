@@ -77,3 +77,26 @@ a:hover {
   transform: translateY(-2px); 
   text-decoration:underline;
 }
+.set_header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 310px;
+}
+.message{
+    display: flex;
+    gap: 16px;
+}
+.message > div{
+    flex: 1;
+}
+.project{
+    display: flex;
+    gap: 16px;
+}
+.project_item{
+    flex: 1;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 16px;
+}

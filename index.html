@@ -9,9 +9,9 @@
 <body>
 
   <!-- header 是页面头部，通常放你的名字和一句自我定位 -->
-  <header>
+  <header class="set_header">
     <h1>ohwd</h1>
-    <p>大三学生 · 正在学习后端开发</p>
+    <p class="user_info">大三学生 · 正在学习后端开发</p>
   </header>
 
   <!-- main 是页面主体，一个页面只写一个 -->
@@ -22,7 +22,7 @@
       <p>在内蒙古上大学，喜欢下象棋</p>
     </section>
 
-    <section>
+    <section >
       <h2>我的照片</h2>
       <img  class="user_img" src="./avatar.jpg" alt="我的照片"  />
       <!-- alt 是图片加载失败时显示的文字，也是给读屏软件用的，不能省略 -->
@@ -65,17 +65,45 @@
     </section>
 
     <section>
+      <h2>我的目标</h2>
+      <div class="project">
+        <div class="project_item">
+          <h3>项目 1</h3>
+          <p>这是我的第一个项目</p>
+        </div>
+        <div class="project_item">
+          <h3>待办事项</h3>
+          <p>flex布局</p>
+        </div>
+        <div class="project_item">
+          <h3>之后想做的项目</h3>
+          <p>待定</p>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+    <section>
       <h2>联系我</h2>
       <form>
-        <!-- label 的 for 必须等于 input 的 id，这样点文字也能选中输入框 -->
+        <div class="message">
         <label for="name">你的名字</label>
         <input id="name" type="text" />
-
+      </div>
+        <div class="message">
         <label for="email">你的邮箱</label>
         <input id="email" type="email" />
-
+      </div>
+        
         <label for="message">留言</label>
         <textarea id="message" rows="4"></textarea>
+        
 
         <label for="source">怎么认识我的</label>
         <select id="source">
