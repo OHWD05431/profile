@@ -9,7 +9,7 @@ body{
     margin: 0;
     padding: 40px 16px;
 }
-main{
+main,header,footer{
     max-width: 720px;
     margin: 0 auto;
 }
@@ -77,19 +77,20 @@ a:hover {
   transform: translateY(-2px); 
   text-decoration:underline;
 }
-.set_header{
+.set-header{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    width: 310px;
+   
 }
-.message{
+.form-row{
     display: flex;
     gap: 16px;
 }
-.message > div{
+.form-field{
     flex: 1;
 }
+
 .project{
     display: flex;
     gap: 16px;
