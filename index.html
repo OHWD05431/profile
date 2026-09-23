@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ohwd 的主页</title>
+</head>
+<body>
+
+  <!-- header 是页面头部，通常放你的名字和一句自我定位 -->
+  <header>
+    <h1>ohwd</h1>
+    <p>大三学生 · 正在学习后端开发</p>
+  </header>
+
+  <!-- main 是页面主体，一个页面只写一个 -->
+  <main>
+
+    <section>
+      <h2>关于我</h2>
+      <p>在内蒙古上大学，喜欢下象棋</p>
+    </section>
+
+    <section>
+      <h2>我的照片</h2>
+      <img src="./avatar.jpg" alt="我的照片" width="200" />
+      <!-- alt 是图片加载失败时显示的文字，也是给读屏软件用的，不能省略 -->
+    </section>
+
+    <section>
+      <h2>我的每周安排</h2>
+      <!-- 任务：把这个表格补成至少 4 行数据，时间/内容/时长 三列 -->
+      <table>
+        <tr>
+          <th>时间</th>
+          <th>周几</th>
+          <th>做什么</th>
+          <th>时长</th>
+          <th>备注</th>
+        </tr>
+        <tr>
+          <td>9月23日</td>
+          <td>周三</td>
+          <td>学习编程</td>
+          <td>五个小时</td>
+          <td>课少</td>
+        </tr>
+        <tr>
+          <td>9月24日</td>
+          <td>周四</td>
+          <td>学习编程</td>
+          <td>五个小时</td>
+          <td>课少</td>
+        </tr>
+        <tr>
+          <td>9月25日</td>
+          <td>周五</td>
+          <td>上课，打游戏</td>
+          <td>8个小时</td>
+          <td>满课，晚上玩一会</td>
+        </tr>
+      </table>
+      <!-- tr 是一行，th 是表头格子，td 是普通格子 -->
+    </section>
+
+    <section>
+      <h2>联系我</h2>
+      <form>
+        <!-- label 的 for 必须等于 input 的 id，这样点文字也能选中输入框 -->
+        <label for="name">你的名字</label>
+        <input id="name" type="text" />
+        <label for="email">你的邮箱</label>
+        <input id="email" type="email" />
+        <label for="message">留言</label>
+        <textarea id="message" rows="1"></textarea>
+        <label for="source">怎么认识我的</label>
+        <select id="source">
+          <option value="朋友介绍">朋友介绍</option>
+          <option value="网络搜索">网络搜索</option>
+          <option value="其他">其他</option>
+          
+        </select>
+        <button type="submit">提交</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+  <a href="https://developer.mozilla.org/zh-CN/">MDN 文档</a>
+  </footer>
+
+</body>
+</html>
