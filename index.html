@@ -24,7 +24,7 @@
 
     <section>
       <h2>我的照片</h2>
-      <img src="./avatar.jpg" alt="我的照片" width="200" />
+      <img  class="user_img" src="./avatar.jpg" alt="我的照片"  />
       <!-- alt 是图片加载失败时显示的文字，也是给读屏软件用的，不能省略 -->
     </section>
 
@@ -70,10 +70,13 @@
         <!-- label 的 for 必须等于 input 的 id，这样点文字也能选中输入框 -->
         <label for="name">你的名字</label>
         <input id="name" type="text" />
+
         <label for="email">你的邮箱</label>
         <input id="email" type="email" />
+
         <label for="message">留言</label>
-        <textarea id="message" rows="1"></textarea>
+        <textarea id="message" rows="4"></textarea>
+
         <label for="source">怎么认识我的</label>
         <select id="source">
           <option value="朋友介绍">朋友介绍</option>
@@ -81,14 +84,14 @@
           <option value="其他">其他</option>
           
         </select>
-        <button type="submit">提交</button>
+         <p><button type="submit">提交</button> </p>
       </form>
     </section>
 
   </main>
 
   <footer>
-  <a href="https://developer.mozilla.org/zh-CN/">MDN 文档</a>
+  <p> <a href="https://developer.mozilla.org/zh-CN/">MDN 文档</a> </p>
   </footer>
 
 </body>
