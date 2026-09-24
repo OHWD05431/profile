@@ -18,3 +18,15 @@ const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 projectitem.innerHTML = '<h3>距离2024年12月31日还有</h3><p id="countdown">' + diffDays + '天</p>';
 
 project.appendChild(projectitem);
+
+//打卡按钮class = check_button
+const btn = document.querySelector('.check_button');
+btn.addEventListener('click',function(){
+    btn.textContent = '已打卡';
+    btn.classList.add('on');
+    const clickedtime = new Date();
+    const checkbox = document.querySelector('.check_button-box');
+    const p = document.createElement('p');
+    p.textContent = '打卡时间:' + clickedtime.toLocaleString();
+    checkbox.appendChild(p);
+})

@@ -104,6 +104,24 @@ a:hover {
 }
 .table-container{
     overflow-x: auto;
+
+}
+.check_button-box{
+    padding: 10px 0;
+    display: flex;
+    margin-bottom: 10px;
+}
+.check_button{
+    
+    background-color: #e8431a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.check_button.on{
+    background-color: #1ae851;
 }
 @media(max-width:600px){
     body{
