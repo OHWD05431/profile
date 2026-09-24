@@ -97,7 +97,7 @@ a:hover {
     gap: 16px;
 }
 .project_item{
-    flex: 1 1 200px;;
+    flex: 1 1 200px;
     border: 1px solid #e5e5e5;
     border-radius: 8px;
     padding: 16px;
@@ -106,11 +106,14 @@ a:hover {
     overflow-x: auto;
 }
 @media(max-width:600px){
+    body{
+        padding: 20px 12px;
+    }
     .form-row{
         flex-direction: column;
         gap: 0;
     }
-    .form-field{
+    .set-header{
         flex-direction:column;
         align-items: flex-start;
         
