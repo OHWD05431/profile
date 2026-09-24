@@ -36,4 +36,28 @@ btn.addEventListener('click',function(){
     const p = document.createElement('p');
     p.textContent = '打卡时间:' + clickedtime.toLocaleString();
     checkbox.appendChild(p);
-})
+});
+//做提交的功能，将他显示在标签之下
+const form = document.querySelector('form');
+form.addEventListener('submit',function(event){
+    event.preventDefault();
+    const name = document.querySelector('#name').value;
+    const email = document.querySelector('#email').value;
+    const message = document.querySelector('#message').value;
+    const source = document.querySelector('#source').value;
+    const form_result = document.querySelector('.form-result');
+    if(name.trim() == ''){
+        form_result.textContent = '请输入你的名称';
+    }
+    else{
+        if(message.length <= 50){
+            form_result.textContent = '谢谢你的留言，' + name;
+        }
+        else{
+            form_result.textContent = '您的留言超过了50字,太多了'
+        }
+    } 
+    
+
+    form.reset();
+});
