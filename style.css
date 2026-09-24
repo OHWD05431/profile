@@ -93,11 +93,26 @@ a:hover {
 
 .project{
     display: flex;
+    flex-wrap: wrap;
     gap: 16px;
 }
 .project_item{
-    flex: 1;
+    flex: 1 1 200px;;
     border: 1px solid #e5e5e5;
     border-radius: 8px;
     padding: 16px;
+}
+.table-container{
+    overflow-x: auto;
+}
+@media(max-width:600px){
+    .form-row{
+        flex-direction: column;
+        gap: 0;
+    }
+    .form-field{
+        flex-direction:column;
+        align-items: flex-start;
+        
+    }
 }
