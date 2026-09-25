@@ -123,6 +123,10 @@ a:hover {
 .check_button.on{
     background-color: #1ae851;
 }
+.quote-box{
+    background-color: rgb(145, 178, 199);
+}
+
 @media(max-width:600px){
     body{
         padding: 20px 12px;
