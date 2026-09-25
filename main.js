@@ -77,21 +77,10 @@ async function loadQuote(){
         const data = await res.json();
         console.log(data);
         //先将详细的内容加入到网页中
-        quoteDetail.textContent = "名句:" + data.hitokoto;
+        quoteDetail.textContent = "名句： " + data.hitokoto;
         //再判断from和from_who是否为空
-        if(data.from_who===''){
-            if(data.from === ''){
-                quoteFrom.textContent = "出处:未知";
-                quoteAuthor.textContent = "作者:未知";
-            }
-            else{quoteFrom.textContent = "出处:" +data.from;
-                quoteAuthor.textContent = "作者:未知";
-            }
-        }
-        else{
-                quoteFrom.textContent = "出处:" +data.from;
-                quoteAuthor.textContent = "作者:" + data.from_who;
-        }
+        quoteFrom.textContent = "出处：" + (data.from || "未知");
+        quoteAuthor.textContent = "作者： " + (data.from_who || "未知");
 
     }
     catch(event){
@@ -100,4 +89,5 @@ async function loadQuote(){
     }
 
 }
+loadQuote();
 quoteBtn.addEventListener('click',loadQuote);

@@ -125,6 +125,8 @@ a:hover {
 }
 .quote-box{
     background-color: rgb(145, 178, 199);
+    padding: 12px;
+    border-radius: 16px;
 }
 
 @media(max-width:600px){
